@@ -1,0 +1,40 @@
+nav {
+
+
+    .nav-menu {
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #ddd;
+
+        ul {
+            width: 500px;
+            font-size: 14px;
+            font-weight: 500;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            li a {
+                transition: 200ms ease-out;
+            }
+
+            li a:hover {
+                font-weight: 700;
+                color: $colore-blu-hover;
+            }
+        }
+
+        button {
+            transition: background-color 300ms ease-out;
+            @include button(#fff);
+
+            &:hover {
+                background-color: $colore-blu-hover;
+                color: #fff;
+            }
+        }
+    }
+
+}

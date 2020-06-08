@@ -1,0 +1,20 @@
+
+$font-family: 'Poppins', sans-serif;
+$titolo-h1: 50px;
+$titolo-h2: 26px;
+$testo-p: 19px;
+
+$colore-testo: #58402c;
+
+$color-salmone: #ffe7d2;
+$colore-blu: #30488f;
+$colore-blu-hover: #233569;
+
+@mixin button($colore) {
+    font-weight: 500;
+    border: 1px solid $colore-blu;
+    padding: 5px 15px;
+    border-radius: 10px;
+    background-color: $colore;
+    cursor: pointer;
+}

@@ -1,0 +1,53 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: $colore-testo;
+    font-family: $font-family;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+h1 {
+    font-size: $titolo-h1;
+}
+
+h2 {
+    font-size: $titolo-h2;
+}
+
+p {
+    font-size: $testo-p;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// END
