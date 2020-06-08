@@ -13,6 +13,8 @@
 
 h1 {
   font-size: 50px;
+  font-weight: 500;
+  line-height: 62px;
 }
 
 h2 {
@@ -53,8 +55,8 @@ nav .nav-menu ul li a {
 }
 
 nav .nav-menu ul li a:hover {
-  font-weight: 700;
   color: #233569;
+  border-bottom: 1px solid #233569;
 }
 
 nav .nav-menu button {
@@ -65,10 +67,73 @@ nav .nav-menu button {
   border-radius: 10px;
   background-color: #fff;
   cursor: pointer;
+  outline: none;
 }
 
 nav .nav-menu button:hover {
   background-color: #233569;
   color: #fff;
+}
+
+nav .nav-menu button:active {
+  transform: scale(0.95);
+}
+
+#jumpotron {
+  height: 650px;
+  display: flex;
+  align-items: center;
+}
+
+#jumpotron .jumpotron {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+#jumpotron .jumpotron .jumbo-img img {
+  display: block;
+  width: 100%;
+}
+
+#jumpotron .jumpotron .jumbo-testi {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#jumpotron .jumpotron p {
+  font-size: 23px;
+  margin: 40px 0px;
+  padding-right: 50px;
+}
+
+#jumpotron .jumpotron button {
+  font-weight: 500;
+  border: 1px solid #30488f;
+  padding: 5px 15px;
+  border-radius: 10px;
+  background-color: #30488f;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  transition: 300ms ease-out;
+}
+
+#jumpotron .jumpotron button:hover {
+  background-color: #233569;
+}
+
+#jumpotron .jumpotron small {
+  color: #aaa;
+  margin: 0px 15px;
+}
+
+#jumpotron .jumpotron a {
+  font-size: 15px;
+  margin-top: 30px;
+}
+
+#jumpotron .jumpotron a:hover {
+  color: #233569;
 }
 

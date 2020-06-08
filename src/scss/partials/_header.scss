@@ -1,6 +1,5 @@
 nav {
 
-
     .nav-menu {
         height: 80px;
         display: flex;
@@ -18,12 +17,13 @@ nav {
 
             li a {
                 transition: 200ms ease-out;
+
+                &:hover {
+                    color: $colore-blu-hover;
+                    border-bottom: 1px solid $colore-blu-hover;
+                }
             }
 
-            li a:hover {
-                font-weight: 700;
-                color: $colore-blu-hover;
-            }
         }
 
         button {
@@ -34,7 +34,82 @@ nav {
                 background-color: $colore-blu-hover;
                 color: #fff;
             }
+
+            &:active {
+                transform: scale(0.95);
+            }
         }
     }
 
 }
+
+#jumpotron {
+    height: 650px;
+    display: flex;
+    align-items: center;
+
+    .jumpotron {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+        .jumbo-img img {
+            display: block;
+            width: 100%;
+        }
+
+        .jumbo-testi {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        p {
+            font-size: 23px;
+            margin: 40px 0px;
+            padding-right: 50px
+        }
+
+        button {
+            @include button($colore-blu);
+            color: #fff;
+            transition: 300ms ease-out;
+
+            &:hover {
+                background-color: $colore-blu-hover;
+            }
+        }
+
+        small {
+            color: #aaa;
+            margin: 0px 15px;
+        }
+
+        a {
+            font-size: 15px;
+            margin-top: 30px;
+
+            &:hover {
+                color: $colore-blu-hover;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// END
