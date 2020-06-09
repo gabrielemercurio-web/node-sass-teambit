@@ -47,6 +47,15 @@ img {
     width: 100%;
 }
 
+button {
+    @include button($colore-blu);
+    color: #fff;
+    transition: 300ms ease-out;
+
+    &:hover {
+        background-color: $colore-blu-hover;
+    }
+}
 
 
 

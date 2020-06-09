@@ -47,6 +47,22 @@ img {
   width: 100%;
 }
 
+button {
+  font-weight: 500;
+  border: 1px solid #30488f;
+  padding: 5px 15px;
+  border-radius: 10px;
+  background-color: #30488f;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  transition: 300ms ease-out;
+}
+
+button:hover {
+  background-color: #233569;
+}
+
 nav .nav-menu {
   height: 80px;
   display: flex;
@@ -119,22 +135,6 @@ nav .nav-menu button:active {
   font-size: 23px;
   margin: 40px 0px;
   padding-right: 50px;
-}
-
-#jumpotron .jumpotron button {
-  font-weight: 500;
-  border: 1px solid #30488f;
-  padding: 5px 15px;
-  border-radius: 10px;
-  background-color: #30488f;
-  cursor: pointer;
-  outline: none;
-  color: #fff;
-  transition: 300ms ease-out;
-}
-
-#jumpotron .jumpotron button:hover {
-  background-color: #233569;
 }
 
 #jumpotron .jumpotron small {
@@ -248,5 +248,83 @@ nav .nav-menu button:active {
 #main-bottom .row .box-text-2 figure img {
   margin-top: 30px;
   width: 70%;
+}
+
+#get-started {
+  padding: 90px 0px;
+  background-color: #ffe7d2;
+}
+
+#get-started .container-2 {
+  padding: 0px 60px;
+}
+
+#get-started h1 {
+  font-size: 42px;
+  line-height: 62px;
+  text-align: center;
+}
+
+#get-started .box-testo {
+  border: 1px solid #888;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 25px 40px;
+  margin: 50px 0px;
+  position: relative;
+}
+
+#get-started .box-testo img.quote {
+  width: 40px;
+  position: absolute;
+  top: -21px;
+  left: -1px;
+}
+
+#get-started .box-testo p {
+  font-size: 16px;
+}
+
+#get-started .box-testo .Alex-Bohdan {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+
+#get-started .box-testo .Alex-Bohdan img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #888;
+  margin-right: 10px;
+}
+
+#get-started .box-testo .Alex-Bohdan p {
+  font-size: 13px;
+  color: #30488f;
+}
+
+#get-started .box-testo .Alex-Bohdan small {
+  font-size: 12px;
+}
+
+#get-started .jumbo-bottoni {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#get-started .jumbo-bottoni small {
+  margin: 0px 15px;
+  color: #aaa;
+}
+
+#get-started .jumbo-bottoni div:nth-child(2) {
+  padding-top: 30px;
+}
+
+#get-started .jumbo-bottoni div:nth-child(2) a {
+  font-size: 14px;
 }
 

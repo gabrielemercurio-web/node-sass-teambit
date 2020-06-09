@@ -69,16 +69,6 @@ nav {
             padding-right: 50px
         }
 
-        button {
-            @include button($colore-blu);
-            color: #fff;
-            transition: 300ms ease-out;
-
-            &:hover {
-                background-color: $colore-blu-hover;
-            }
-        }
-
         small {
             color: #aaa;
             margin: 0px 15px;
