@@ -7,7 +7,12 @@
 }
 
 .container {
-  width: 1200px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.container-2 {
+  max-width: 800px;
   margin: auto;
 }
 
@@ -135,5 +140,40 @@ nav .nav-menu button:active {
 
 #jumpotron .jumpotron a:hover {
   color: #233569;
+}
+
+#main-top {
+  background-color: #ffe7d2;
+  text-align: center;
+}
+
+#main-top h2,
+#main-top hr {
+  padding: 100px 0px;
+}
+
+#main-top .traditional-people,
+#main-top .modern-people {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-auto-rows: 1fr;
+  grid-gap: 80px;
+}
+
+#main-top .traditional-people .card img,
+#main-top .modern-people .card img {
+  display: block;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+#main-top .traditional-people .card p,
+#main-top .modern-people .card p {
+  font-size: 16px;
+}
+
+#main-top .traditional-people .card-4,
+#main-top .modern-people .card-4 {
+  grid-column: 2/3;
 }
 

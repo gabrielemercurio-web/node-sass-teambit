@@ -1,0 +1,56 @@
+#main-top {
+    background-color: $color-salmone;
+    text-align: center;
+
+    h2, hr {
+        padding: 100px 0px;
+    }
+
+    .traditional-people,
+    .modern-people {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-auto-rows: 1fr;
+        grid-gap: 80px;
+
+        .card {
+            img {
+                display: block;
+                width: 100%;
+                margin-bottom: 30px;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+
+        .card-4 {
+            grid-column: 2 / 3;
+        }
+
+    }
+}
+
+#main-bottom {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// END
