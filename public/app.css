@@ -16,6 +16,11 @@
   margin: auto;
 }
 
+.container-3 {
+  max-width: 1440px;
+  margin: auto;
+}
+
 h1 {
   font-size: 50px;
   font-weight: 500;
@@ -36,6 +41,10 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+img {
+  width: 100%;
 }
 
 nav .nav-menu {
@@ -147,16 +156,22 @@ nav .nav-menu button:active {
   text-align: center;
 }
 
-#main-top h2,
+#main-top h2 {
+  padding: 90px 0px;
+}
+
 #main-top hr {
-  padding: 100px 0px;
+  margin: 90px auto;
+  color: #888;
+  height: 1px;
 }
 
 #main-top .traditional-people,
 #main-top .modern-people {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  grid-auto-rows: 1fr;
+  grid-auto-rows: minmax(150px, 3fr);
+  justify-content: center;
   grid-gap: 80px;
 }
 
@@ -164,16 +179,74 @@ nav .nav-menu button:active {
 #main-top .modern-people .card img {
   display: block;
   width: 100%;
-  margin-bottom: 30px;
 }
 
 #main-top .traditional-people .card p,
 #main-top .modern-people .card p {
   font-size: 16px;
+  margin-top: 30px;
 }
 
 #main-top .traditional-people .card-4,
 #main-top .modern-people .card-4 {
   grid-column: 2/3;
+  justify-self: center;
+}
+
+#main-top .traditional-people .card-4 img,
+#main-top .modern-people .card-4 img {
+  width: auto;
+  height: 100%;
+}
+
+#main-bottom {
+  padding: 90px 0px;
+}
+
+#main-bottom .row {
+  padding: 50px 0px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 30px;
+}
+
+#main-bottom .row .box-text {
+  display: grid;
+  grid-template-columns: 55% 1fr;
+}
+
+#main-bottom .row .box-text p {
+  padding: 20px 0px;
+}
+
+#main-bottom .row .box-text figure {
+  text-align: center;
+}
+
+#main-bottom .row .box-text figure img {
+  margin-top: 30px;
+  width: 70%;
+}
+
+#main-bottom .row .box-text-2 {
+  display: grid;
+  grid-template-columns: 1fr 55%;
+}
+
+#main-bottom .row .box-text-2 .float-right {
+  grid-column: 2/3;
+}
+
+#main-bottom .row .box-text-2 p {
+  padding: 20px 0px;
+}
+
+#main-bottom .row .box-text-2 figure {
+  text-align: center;
+}
+
+#main-bottom .row .box-text-2 figure img {
+  margin-top: 30px;
+  width: 70%;
 }
 
