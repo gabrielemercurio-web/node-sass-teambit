@@ -328,3 +328,46 @@ nav .nav-menu button:active {
   font-size: 14px;
 }
 
+footer {
+  padding: 90px 0px;
+}
+
+footer .container {
+  display: grid;
+  grid-template-columns: 50px 350px auto;
+  grid-gap: 25px;
+}
+
+footer p {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+footer p span {
+  color: #30488f;
+}
+
+footer .menu-footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  grid-gap: 15px;
+}
+
+footer .menu-footer li {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+footer .menu-footer li:first-child {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+footer .menu-footer li:hover a {
+  color: #233569;
+}
+
+footer .menu-footer a {
+  font-size: 14px;
+}
+

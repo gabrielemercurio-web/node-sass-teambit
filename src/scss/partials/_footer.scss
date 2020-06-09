@@ -1,0 +1,42 @@
+footer {
+    padding: 90px 0px;
+
+    .container {
+        display: grid;
+        grid-template-columns: 50px 350px auto;
+        grid-gap: 25px;
+    }
+
+    p {
+        font-size: 17px;
+        font-weight: 600;
+
+        span {
+            color: $colore-blu;
+        }
+    }
+
+    .menu-footer {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+        grid-gap: 15px;
+
+        li {
+            margin-bottom: 10px;
+            cursor: pointer;
+
+            &:first-child {
+                font-size: 16px;
+                font-weight: 700;
+            }
+
+            &:hover a {
+                color: $colore-blu-hover;
+            }
+        }
+
+        a {
+            font-size: 14px;
+        }
+    }
+}
